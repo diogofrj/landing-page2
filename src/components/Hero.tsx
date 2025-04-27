@@ -5,13 +5,11 @@ function Hero() {
     <div className="w-full bg-gradient-to-br from-black via-[#111111] to-[#1a1a1a] flex flex-col items-center py-16 px-4 text-white">
       {/* Logo e título principal */}
       <div className="flex flex-col items-center mb-10">
-        <img 
-          src="/assets/images/logo.png" 
-          alt="Instituto Carla Veiga" 
-          className="h-28 md:h-36 mb-6 drop-shadow-lg"
-        />
+
         <h1 className="text-5xl md:text-6xl font-bold text-center tracking-tight">
           <span className="text-[#f8c304] text-shadow-lg">Método</span> <span className="text-white text-shadow-lg">Coluna</span> <span className="text-[#f8c304] text-shadow-lg">Viva</span>
+          <br />
+          <span className="text-xl md:text-2xl text-white/90">Edição: Coluna Lombar</span>
         </h1>
       </div>
       
@@ -25,10 +23,10 @@ function Hero() {
         <div className="py-6 px-4 md:px-8 bg-black bg-opacity-70 backdrop-blur-sm">
           <h2 className="text-xl md:text-2xl text-center leading-relaxed">
             <span className="font-bold text-[#f8c304] block mb-4 text-2xl md:text-3xl tracking-wide uppercase">
-              Elimine as dores nas costas em apenas 2 minutos por dia
+              Elimine as dores na lombar em apenas 2 minutos por dia
             </span>
             <span className="text-white text-opacity-90">
-              Descubra o Método <span className="font-bold text-[#f8c304]">100% Natural</span> com 50 Exercícios Passo a Passo (Com Vídeos Explicativos) para Acabar com Dores Lombares, Hérnia de Disco e Tensão Muscular
+              Descubra o Método <span className="font-bold text-[#f8c304]">100% Natural</span> com Exercícios Passo a Passo (Com Vídeos Explicativos) para Acabar com Dores Lombares, Hérnia de Disco e Tensão Muscular
             </span>
           </h2>
           
@@ -44,7 +42,7 @@ function Hero() {
             </div>
             <div className="flex items-center bg-black bg-opacity-50 p-2 rounded-full border border-[#f8c304]/30">
               <span className="w-8 h-8 flex items-center justify-center rounded-full bg-[#f8c304] text-black font-bold text-lg">✓</span>
-              <span className="ml-2 text-[#f8c304]">RETIRAR</span>
+              <span className="ml-2 text-[#f8c304]"> ----- RETIRAR -----</span>
             </div>
           </div>
         </div>
@@ -221,9 +219,11 @@ function Hero() {
             </div>
             
             {/* Botão CTA principal */}
-            <button className="w-full py-5 px-8 bg-gradient-to-r from-[#f8c304] to-[#ffd700] hover:from-[#ffd700] hover:to-[#f8c304] text-black text-xl md:text-2xl font-bold rounded-lg shadow-lg transform hover:scale-105 hover:scale-95 transition-all duration-300 uppercase tracking-wider">
-              Quero acabar com minhas dores agora!
-            </button>
+            <a href="https://pay.kiwify.com.br/UQ3SQz3" className="block w-full">
+              <button className="w-full py-5 px-8 bg-gradient-to-r from-[#f8c304] to-[#ffd700] hover:from-[#ffd700] hover:to-[#f8c304] text-black text-xl md:text-2xl font-bold rounded-lg shadow-lg transform hover:scale-105 hover:scale-95 transition-all duration-1000 uppercase tracking-wider animate-pulse">
+                Quero acabar com minhas dores agora!
+              </button>
+            </a>
             
             {/* Selos de garantia/segurança */}
             <div className="flex flex-wrap justify-center gap-4 mt-4">

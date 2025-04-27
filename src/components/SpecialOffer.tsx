@@ -1,143 +1,93 @@
 import * as React from "react";
+import CountdownTimer from "./CountdownTimer";
 
 function SpecialOffer() {
+  // Estilo CSS para animação personalizada
+  const animationStyle = `
+    @keyframes moveBackAndForth {
+      0% {
+        transform: translateZ(0) scale(1);
+      }
+      50% {
+        transform: translateZ(20px) scale(1.1);
+      }
+      100% {
+        transform: translateZ(0) scale(1);
+      }
+    }
+    .garantia-animation {
+      animation: moveBackAndForth 2s infinite;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+    }
+  `;
+
   return (
-    <div className="w-full py-12 bg-gradient-to-b from-[#103259] to-[#184e8a] text-white">
-      <div className="max-w-4xl mx-auto px-4">
-        {/* Banner de oferta */}
-        <div className="bg-[#f8c304] text-[#103259] py-3 px-4 rounded-t-lg text-center font-bold text-lg shadow-lg">
-          🔥 OFERTA ESPECIAL POR TEMPO LIMITADO 🔥
-        </div>
-        
-        {/* Conteúdo principal */}
-        <div className="bg-white text-gray-800 p-8 rounded-b-lg shadow-xl">
-          <h2 className="text-3xl font-bold mb-6 text-center text-[#103259]">
-            Adquira Agora o Método <span className="text-[#f8c304]">Coluna Viva</span>
+    <div className="w-full bg-black py-16 px-4">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            <span className="text-[#f8c304]">Oferta Especial</span> Método Coluna Viva
           </h2>
+          <p className="text-xl text-white/80 mb-2">
+            De <span className="line-through">R$997</span> por apenas
+          </p>
+          <p className="text-4xl md:text-5xl font-bold text-[#f8c304] mb-4">
+            12x R$20,37
+          </p>
+          <p className="text-2xl font-semibold text-white mb-8">
+            ou R$197 à vista
+          </p>
           
           <div className="mb-8">
-            <h3 className="text-xl font-semibold mb-4 text-[#103259] border-b-2 border-[#eef6ff] pb-2">
-              O que você vai receber:
-            </h3>
-            
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <div className="text-[#f8c304] mr-3 mt-1">
-                  <i className="fas fa-check-circle text-lg"></i>
-                </div>
-                <div>
-                  <span className="font-semibold text-[#103259]">Programa Completo Coluna Viva</span>
-                  <p className="text-sm text-gray-600">Acesso completo a todo o conteúdo do método por 1 ano inteiro.</p>
-                </div>
-              </li>
-              
-              <li className="flex items-start">
-                <div className="text-[#f8c304] mr-3 mt-1">
-                  <i className="fas fa-check-circle text-lg"></i>
-                </div>
-                <div>
-                  <span className="font-semibold text-[#103259]">Bônus 1: E-book "Método Coluna Viva"</span>
-                  <p className="text-sm text-gray-600">Guia digital com dicas práticas para manter sua coluna livre de dores.</p>
-                </div>
-              </li>
-              
-              <li className="flex items-start">
-                <div className="text-[#f8c304] mr-3 mt-1">
-                  <i className="fas fa-check-circle text-lg"></i>
-                </div>
-                <div>
-                  <span className="font-semibold text-[#103259]">Bônus 2: 3 Sessões ao Vivo</span>
-                  <p className="text-sm text-gray-600">Encontros online para tirar suas dúvidas com especialistas em coluna.</p>
-                </div>
-              </li>
-              
-              <li className="flex items-start">
-                <div className="text-[#f8c304] mr-3 mt-1">
-                  <i className="fas fa-check-circle text-lg"></i>
-                </div>
-                <div>
-                  <span className="font-semibold text-[#103259]">Bônus 3: Grupo VIP de Suporte</span>
-                  <p className="text-sm text-gray-600">Comunidade exclusiva para compartilhar experiências e receber suporte.</p>
-                </div>
-              </li>
-              
-              <li className="flex items-start">
-                <div className="text-[#f8c304] mr-3 mt-1">
-                  <i className="fas fa-check-circle text-lg"></i>
-                </div>
-                <div>
-                  <span className="font-semibold text-[#103259]">Bônus 4: Acompanhamento Personalizado</span>
-                  <p className="text-sm text-gray-600">Suporte via WhatsApp para acompanhar seu progresso durante 30 dias.</p>
-                </div>
-              </li>
-            </ul>
+            <p className="text-white mb-2">Essa oferta expira em:</p>
+            <CountdownTimer className="justify-center" />
           </div>
           
-          {/* Preço */}
-          <div className="bg-[#eef6ff] p-6 rounded-lg mb-6">
-            <div className="text-center mb-4">
-              <p className="text-[#103259] text-lg font-bold">Valor Total: <span className="line-through text-gray-500">R$ 997,00</span></p>
-              <div className="text-3xl font-bold text-[#103259] mt-2">
-                Por apenas
-              </div>
-            </div>
-            
-            <div className="flex flex-col md:flex-row justify-center items-center gap-6 my-4">
-              <div className="bg-white p-4 rounded-lg shadow-md text-center border-2 border-[#f8c304]">
-                <p className="text-sm text-gray-600 mb-1">12x de</p>
-                <p className="text-3xl font-bold text-[#103259]">R$ 29,64</p>
-                <p className="text-sm text-gray-600">ou R$ 297,00 à vista</p>
-              </div>
-              
-              <div className="text-center text-[#103259]">
-                <p className="font-bold text-lg">Economize R$ 700,00</p>
-                <p className="text-sm">70% de desconto</p>
-              </div>
-            </div>
-            
-            {/* Contador */}
-            <div className="text-center text-sm text-[#103259] mb-4">
-              <p>Esta oferta expira em:</p>
-              <div className="flex justify-center gap-2 mt-2">
-                <div className="bg-[#103259] text-white px-2 py-1 rounded">00</div>:
-                <div className="bg-[#103259] text-white px-2 py-1 rounded">45</div>:
-                <div className="bg-[#103259] text-white px-2 py-1 rounded">22</div>
-              </div>
-            </div>
-          </div>
+          <a
+            href="https://pay.kiwify.com.br/UQ3SQz3"
+            className="bg-[#f8c304] text-black font-bold py-4 px-8 rounded-full text-xl inline-block transition-all hover:bg-yellow-400 hover:scale-105 transform duration-300 mb-6"
+          >
+            QUERO ACABAR COM MINHAS DORES AGORA
+          </a>
           
-          {/* Botão de CTA */}
-          <div className="text-center mb-8">
-            <a 
-              href="#comprar" 
-              className="inline-block bg-gradient-to-r from-[#f8c304] to-[#e0a800] text-[#103259] font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-xl"
+          <div className="flex justify-center items-center text-white/80 space-x-2 mb-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-[#f8c304]"
+              viewBox="0 0 20 20"
+              fill="currentColor"
             >
-              QUERO ACABAR COM MINHAS DORES AGORA →
-            </a>
-            <p className="text-sm text-gray-500 mt-2">Acesso imediato após confirmação do pagamento</p>
+              <path
+                fillRule="evenodd"
+                d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                clipRule="evenodd"
+              />
+            </svg>
+            <span>Pagamento 100% seguro</span>
           </div>
           
-          {/* Garantia e Segurança */}
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6 border-t border-gray-200 pt-6">
-            <div className="flex items-center">
-              <div className="text-4xl text-[#103259] mr-3">
-                <i className="fas fa-shield-alt"></i>
-              </div>
-              <div>
-                <p className="font-semibold text-[#103259]">Garantia de 7 dias</p>
-                <p className="text-sm text-gray-600">Teste o método sem riscos</p>
-              </div>
-            </div>
-            
-            <div className="flex flex-wrap justify-center gap-2">
-              <i className="fab fa-cc-visa text-3xl text-gray-600"></i>
-              <i className="fab fa-cc-mastercard text-3xl text-gray-600"></i>
-              <i className="fab fa-cc-amex text-3xl text-gray-600"></i>
-              <i className="fab fa-pix text-3xl text-gray-600"></i>
-              <i className="fas fa-barcode text-3xl text-gray-600"></i>
-            </div>
+          {/* Estilo para animação personalizada */}
+          <style dangerouslySetInnerHTML={{ __html: animationStyle }} />
+          
+          {/* Selo de garantia com animação */}
+          <div className="flex justify-center my-6">
+            <img 
+              src="/assets/images/garantia1.png" 
+              alt="7 dias de garantia" 
+              className="w-48 hover:scale-110 transition-all duration-500 garantia-animation"
+            />
+          </div>
+          
+          <div className="flex justify-center space-x-4">
+            <img src="https://logowik.com/content/uploads/images/580_visa.jpg" alt="Visa" className="h-8 w-auto" />
+            <img src="https://static-00.iconduck.com/assets.00/mastercard-icon-2048x1313-j69pg4er.png" alt="Mastercard" className="h-8 w-auto" />
+            <img src="https://logowik.com/content/uploads/images/amex-card1708.jpg" alt="American Express" className="h-8 w-auto" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Logo_-_pix_powered_by_Banco_Central_%28Brazil%2C_2020%29.png" alt="Pix" className="h-8 w-auto" />
+            <img src="https://logodownload.org/wp-content/uploads/2019/09/boleto-logo.png" alt="Boleto" className="h-8 w-auto" />
           </div>
         </div>
+
       </div>
     </div>
   );

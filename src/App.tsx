@@ -5,6 +5,7 @@ import Benefits from "./components/Benefits";
 import Testimonials from "./components/Testimonials";
 import Bonuses from "./components/Bonuses";
 import SpecialOffer from "./components/SpecialOffer";
+import ProfessionalIntro from "./components/ProfessionalIntro";
 import SummaryFAQ from "./components/SummaryFAQ";
 import AuthorAbout from "./components/AuthorAbout";
 import Footer from "./components/Footer";
@@ -46,6 +47,11 @@ function App() {
       {/* Special Offer */}
       <section id="special-offer" className="w-full">
         <SpecialOffer />
+      </section>
+      
+      {/* Professional Introduction */}
+      <section id="professional-intro" className="w-full">
+        <ProfessionalIntro />
       </section>
 
       {/* FAQ Section */}
