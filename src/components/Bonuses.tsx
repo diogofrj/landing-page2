@@ -52,12 +52,24 @@ function Bonuses() {
           <div className="bg-[#111] rounded-lg shadow-lg p-6 md:p-8 flex flex-col md:flex-row items-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
             <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-black/30 flex items-center justify-center mb-4 md:mb-0 md:mr-8 flex-shrink-0 border-2 border-[#f8c304]">
               <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-[#f8c304]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
               </svg>
             </div>
             <div>
               <h3 className="font-bold text-xl text-[#f8c304] mb-2">Bônus 4 - Guia de Testes</h3>
               <p className="text-white/80">Guia de testes para você descobrir seu movimento preferencial pelo método Coluna Viva.</p>
+            </div>
+          </div>
+          {/* Bônus 5 */}
+          <div className="bg-[#111] rounded-lg shadow-lg p-6 md:p-8 flex flex-col md:flex-row items-center transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-black/30 flex items-center justify-center mb-4 md:mb-0 md:mr-8 flex-shrink-0 border-2 border-[#f8c304]">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-[#f8c304]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="font-bold text-xl text-[#f8c304] mb-2">Comunidade exclusiva</h3>
+              <p className="text-white/80">Acesso a uma comunidade exclusiva do Método Coluna Viva. </p>
             </div>
           </div>
         </div>
