@@ -26,7 +26,7 @@ function SpecialOffer() {
                   <i className="fas fa-check-circle text-lg"></i>
                 </div>
                 <div>
-                  <span className="font-semibold text-[#103259]">Programa Completo Coluna Sem Dor</span>
+                  <span className="font-semibold text-[#103259]">Programa Completo Coluna Viva</span>
                   <p className="text-sm text-gray-600">Acesso completo a todo o conteúdo do método por 1 ano inteiro.</p>
                 </div>
               </li>
@@ -36,7 +36,7 @@ function SpecialOffer() {
                   <i className="fas fa-check-circle text-lg"></i>
                 </div>
                 <div>
-                  <span className="font-semibold text-[#103259]">Bônus 1: E-book "Coluna Saudável"</span>
+                  <span className="font-semibold text-[#103259]">Bônus 1: E-book "Método Coluna Viva"</span>
                   <p className="text-sm text-gray-600">Guia digital com dicas práticas para manter sua coluna livre de dores.</p>
                 </div>
               </li>
