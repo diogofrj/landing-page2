@@ -1,46 +1,70 @@
-import React from "react";
+import * as React from "react";
+import Hero from "./components/Hero";
+import MethodExplanation from "./components/MethodExplanation";
+import Benefits from "./components/Benefits";
+import Testimonials from "./components/Testimonials";
+import Bonuses from "./components/Bonuses";
+import SpecialOffer from "./components/SpecialOffer";
+import SummaryFAQ from "./components/SummaryFAQ";
+import AuthorAbout from "./components/AuthorAbout";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-[#f9f9f9] flex flex-col items-center font-sans">
+    <div className="w-full min-h-screen bg-[#f5f7fa] flex flex-col items-center font-[Montserrat]">
       {/* Hero Section */}
-      <section id="hero" className="w-full flex flex-col items-center bg-gradient-to-tr from-[#27385f] to-[#192447] text-white py-10 px-2">
-        {/* Notice/alert */}
-        {/* Headline & Subheadline */}
-        {/* Program Image(s) */}
-        {/* Price, Guarantee, CTA */}
+      <section id="hero" className="w-full">
+        <Hero />
       </section>
+
       {/* Method Explanation */}
-      <section id="method" className="w-full max-w-2xl bg-white shadow py-8 px-4 -mt-6 mb-6 rounded-lg z-10">
-        {/* What is the method, and for whom */}
+      <section id="method" className="w-full px-4">
+        <MethodExplanation />
       </section>
-      {/* Benefits/What you receive */}
-      <section id="benefits" className="w-full max-w-2xl flex flex-col items-center mb-6">
-        {/* Flex boxes or cards for Mobilidade, Estabilidade, Fortalecimento */}
+
+      {/* Benefits Section */}
+      <section id="benefits" className="w-full py-16 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <Benefits />
+        </div>
       </section>
+
       {/* Testimonials */}
-      <section id="testimonials" className="w-full max-w-2xl mb-6 flex flex-col items-center">
-        {/* Testimonial/avatars grid or carousel */}
+      <section id="testimonials" className="w-full py-16 px-4 bg-gradient-to-br from-[#f5f7fa] to-[#e0f2fe]">
+        <div className="max-w-5xl mx-auto">
+          <Testimonials />
+        </div>
       </section>
+
       {/* Bonuses */}
-      <section id="bonuses" className="w-full max-w-2xl space-y-6 mb-6">
-        {/* Cards for each bonus */}
+      <section id="bonuses" className="w-full py-16 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <Bonuses />
+        </div>
       </section>
-      {/* Special Offer Section */}
-      <section id="special-offer" className="w-full bg-black text-white py-10 mb-6 flex flex-col items-center">
-        {/* Checklist, Price, CTA, Urgency/badge */}
+
+      {/* Special Offer */}
+      <section id="special-offer" className="w-full">
+        <SpecialOffer />
       </section>
-      {/* Summary/FAQ/Objections Section */}
-      <section id="faq" className="w-full max-w-2xl bg-white shadow py-8 px-4 mb-6 rounded-lg flex flex-col items-center">
-        {/* Text for summary, objections, payment assurance */}
+
+      {/* FAQ Section */}
+      <section id="faq" className="w-full py-16 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <SummaryFAQ />
+        </div>
       </section>
-      {/* Author/About */}
-      <section id="about" className="w-full max-w-2xl py-8 px-4 mb-6 flex flex-col items-center bg-[#ededed] rounded-lg">
-        {/* Author image & description */}
+
+      {/* Author About */}
+      <section id="about" className="w-full py-16 px-4 bg-gradient-to-br from-[#f5f7fa] to-[#e0f2fe]">
+        <div className="max-w-5xl mx-auto">
+          <AuthorAbout />
+        </div>
       </section>
+
       {/* Footer */}
-      <footer className="w-full bg-black text-white text-xs py-4 flex flex-col items-center">
-        {/* Policy links etc. */}
+      <footer className="w-full">
+        <Footer />
       </footer>
     </div>
   );
