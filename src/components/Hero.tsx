@@ -44,7 +44,7 @@ function Hero() {
             </div>
             <div className="flex items-center bg-black bg-opacity-50 p-2 rounded-full border border-[#f8c304]/30">
               <span className="w-8 h-8 flex items-center justify-center rounded-full bg-[#f8c304] text-black font-bold text-lg">✓</span>
-              <span className="ml-2 text-[#f8c304]">Acesso Vitalício</span>
+              <span className="ml-2 text-[#f8c304]">RETIRAR</span>
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ function MethodExplanation() {
           </div>
           <h3 className="text-xl font-bold text-center text-[#103259] mb-2">Desenvolvido por Especialistas</h3>
           <p className="text-gray-600 text-center">
-            Criado por uma equipe multidisciplinar de fisioterapeutas e ortopedistas especialistas em coluna vertebral.
+            Criado pela Dra. Carla Veiga, Especialista em Coluna Vertebral.
           </p>
         </div>
         
