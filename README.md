@@ -1,69 +1,50 @@
-# Coluna Viva - Landing Page
+# React + TypeScript + Vite
 
-Este é o projeto de uma landing page para o produto "Coluna Viva", um tratamento natural para dores na coluna.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Estrutura do Projeto
+Currently, two official plugins are available:
 
-O projeto está organizado da seguinte forma:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
 ```
-coluna-viva/
-│
-├── index.html              # Página principal
-├── assets/                 # Pasta de recursos
-│   ├── css/                # Estilos CSS
-│   │   └── style.css       # Arquivo CSS principal
-│   ├── js/                 # Scripts JavaScript
-│   │   └── main.js         # Arquivo JavaScript principal
-│   ├── images/             # Imagens do site
-│   └── fonts/              # Fontes personalizadas (se necessário)
-└── README.md               # Documentação do projeto
+
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
+
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+})
 ```
-
-## Funcionalidades
-
-A landing page "Coluna Viva" possui as seguintes funcionalidades:
-
-- Design responsivo para todos os dispositivos
-- Seções organizadas com conteúdo específico para cada etapa da venda
-- Efeitos interativos com JavaScript
-- Accordions de perguntas frequentes
-- Rolagem suave entre seções
-- Formulário para captura de leads (opcional)
-
-## Requisitos
-
-Para visualizar localmente o projeto, você precisa:
-
-1. Um navegador web moderno (Chrome, Firefox, Safari, Edge)
-2. Um servidor web local (opcional, para testes)
-
-## Como Usar
-
-1. Clone ou baixe este repositório
-2. Abra o arquivo `index.html` em seu navegador
-3. Para editar:
-   - Modifique o arquivo `index.html` para alterar a estrutura
-   - Edite o arquivo `assets/css/style.css` para modificar a aparência
-   - Altere o arquivo `assets/js/main.js` para adicionar funcionalidades
-
-## Personalização
-
-Para personalizar essa landing page para seu próprio produto:
-
-1. Substitua todas as referências a "Coluna Viva" pelo nome do seu produto
-2. Atualize os textos em `index.html` para refletir os benefícios do seu produto
-3. Substitua as imagens na pasta `assets/images/` pelas do seu produto
-4. Ajuste as cores no arquivo CSS para corresponder à identidade visual da sua marca
-
-## Publicação
-
-Para publicar o site, você pode usar:
-
-1. Serviços de hospedagem compartilhada (GoDaddy, HostGator, Locaweb, etc.)
-2. Plataformas de hospedagem estática (GitHub Pages, Netlify, Vercel)
-3. Serviços de landing page (Wix, Wordpress, Shopify)
-
-## Créditos
-
-Desenvolvido a partir de um modelo de referência, adaptado para o produto "Coluna Viva". 
