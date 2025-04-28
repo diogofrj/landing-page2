@@ -7,7 +7,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-6 md:mb-0">
             <img 
-              src="/src/logo.png" 
+              src="/assets/images/logo.png" 
               alt="Instituto Carla Veiga" 
               className="h-12 mb-4"
             />

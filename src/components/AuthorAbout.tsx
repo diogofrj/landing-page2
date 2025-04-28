@@ -6,7 +6,7 @@ function AuthorAbout() {
       <div className="flex flex-col md:flex-row items-center">
         <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#103259] shadow-lg mb-6 md:mb-0 md:mr-8">
           <img
-            src="public/assets/images/carla-about.jpg"
+            src="/assets/images/carla-about.jpg"
             alt="Dra. Carla Veiga"
             className="w-full h-full object-cover"
           />
