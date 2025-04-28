@@ -71,6 +71,52 @@ Este projeto é uma landing page para o produto "Método Coluna Viva", desenvolv
 - **TailwindCSS**: Framework CSS utilitário para design responsivo
 - **Embla Carousel**: Biblioteca para componentes de carrossel
 
+## Executando com Docker
+
+O projeto está configurado para ser executado facilmente usando Docker, tanto em ambiente de desenvolvimento quanto em produção.
+
+### Pré-requisitos
+
+- Docker
+- Docker Compose
+
+### Ambiente de Desenvolvimento
+
+Para executar o projeto em modo de desenvolvimento com hot-reload:
+
+```bash
+# Inicia o ambiente de desenvolvimento
+docker-compose up app-dev
+
+# O aplicativo estará disponível em http://localhost:5173
+```
+
+### Ambiente de Produção
+
+Para executar o projeto em modo de produção:
+
+```bash
+# Constrói e inicia o container de produção
+docker-compose up app-prod --build
+
+# O aplicativo estará disponível em http://localhost:80
+```
+
+### Construindo Apenas a Imagem de Produção
+
+Se você precisar apenas construir a imagem Docker sem executá-la:
+
+```bash
+docker build -t metodo-coluna-viva:latest .
+```
+
+### Estrutura dos Arquivos Docker
+
+- **`Dockerfile`**: Define um build multi-estágio para criar uma imagem otimizada de produção
+- **`docker-compose.yml`**: Configura os serviços para desenvolvimento e produção
+- **`nginx.conf`**: Configuração do NGINX para servir a aplicação React
+- **`.dockerignore`**: Lista de arquivos que devem ser ignorados durante o build do Docker
+
 ---
 
 # React + TypeScript + Vite
