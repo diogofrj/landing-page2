@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Hero from "./components/Hero";
 import MethodExplanation from "./components/MethodExplanation";
 import Benefits from "./components/Benefits";
@@ -9,6 +9,9 @@ import ProfessionalIntro from "./components/ProfessionalIntro";
 import SummaryFAQ from "./components/SummaryFAQ";
 import AuthorAbout from "./components/AuthorAbout";
 import Footer from "./components/Footer";
+import VideoSection from "./components/VideoSection";
+import VideoSection2 from "./components/VideoSection2";
+import VideoSection3 from "./components/VideoSection3";
 
 function App() {
   return (
@@ -24,24 +27,33 @@ function App() {
       </section>
 
       {/* Benefits Section */}
-      <section id="benefits" className="w-full py-16 px-4 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <Benefits />
-        </div>
+      <section id="benefits" className="w-full">
+        <Benefits />
+      </section>
+
+      {/* Video Section */}
+      <section id="video" className="w-full">
+        <VideoSection />
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="w-full py-16 px-4 bg-gradient-to-br from-[#f5f7fa] to-[#e0f2fe]">
-        <div className="max-w-5xl mx-auto">
-          <Testimonials />
-        </div>
+      <section id="testimonials" className="w-full">
+        <Testimonials />
       </section>
-
+      {/* Third Video Section */}
+      <section id="video3" className="w-full">
+        <VideoSection3 />
+      </section>
       {/* Bonuses */}
       <section id="bonuses" className="w-full py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <Bonuses />
         </div>
+      </section>
+
+      {/* Second Video Section */}
+      <section id="video2" className="w-full">
+        <VideoSection2 />
       </section>
 
       {/* Special Offer */}

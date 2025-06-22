@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useState, useCallback } from "react";
 import useEmblaCarousel from 'embla-carousel-react';
 
@@ -60,7 +59,7 @@ function Testimonials() {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-16 bg-black">
+    <div className="w-full px-4 py-16 bg-black">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-2 text-[#f8c304]">
           Depoimentos de quem já experimentou
@@ -72,7 +71,7 @@ function Testimonials() {
       </div>
 
       {/* Swiper Container */}
-      <div className="container">
+      <div className="max-w-6xl mx-auto">
         <h3 className="title text-[#f8c304] text-xl mb-4">Depoimentos de nossos clientes</h3>
         
         {/* Embla Carousel */}

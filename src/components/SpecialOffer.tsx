@@ -30,13 +30,13 @@ function SpecialOffer() {
             <span className="text-[#f8c304]">Oferta Especial</span> Método Coluna Viva
           </h2>
           <p className="text-xl text-white/80 mb-2">
-            De <span className="line-through">R$997</span> por apenas
+            De <span className="line-through">R$997,00</span> por apenas
           </p>
           <p className="text-4xl md:text-5xl font-bold text-[#f8c304] mb-4">
-            12x R$20,37
+            12x R$19,90
           </p>
           <p className="text-2xl font-semibold text-white mb-8">
-            ou R$197 à vista
+            ou R$199,00 à vista
           </p>
           
           <div className="mb-8">
