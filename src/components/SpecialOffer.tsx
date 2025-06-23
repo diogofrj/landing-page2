@@ -33,10 +33,10 @@ function SpecialOffer() {
             De <span className="line-through">R$997,00</span> por apenas
           </p>
           <p className="text-4xl md:text-5xl font-bold text-[#f8c304] mb-4">
-            12x R$19,90
+            12x R$19,70
           </p>
           <p className="text-2xl font-semibold text-white mb-8">
-            ou R$199,00 à vista
+            ou R$197,00 à vista
           </p>
           
           <div className="mb-8">
