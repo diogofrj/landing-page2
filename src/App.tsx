@@ -3,7 +3,7 @@ import Hero from "./components/Hero";
 import MethodExplanation from "./components/MethodExplanation";
 import Benefits from "./components/Benefits";
 import Testimonials from "./components/Testimonials";
-import Bonuses from "./components/Bonuses";
+// import Bonuses from "./components/Bonuses";
 import SpecialOffer from "./components/SpecialOffer";
 import ProfessionalIntro from "./components/ProfessionalIntro";
 import SummaryFAQ from "./components/SummaryFAQ";
@@ -45,11 +45,11 @@ function App() {
         <VideoSection3 />
       </section>
       {/* Bonuses */}
-      <section id="bonuses" className="w-full py-16 px-4 bg-white">
+      {/* <section id="bonuses" className="w-full py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <Bonuses />
-        </div>
-      </section>
+        </div> */}
+      {/* </section> */}
 
       {/* Second Video Section */}
       <section id="video2" className="w-full">
