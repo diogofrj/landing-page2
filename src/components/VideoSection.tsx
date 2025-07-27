@@ -4,7 +4,7 @@ function VideoSection() {
   const [videoError, setVideoError] = useState(false);
   
   // ID do vídeo do YouTube - vamos testar com um vídeo que funciona primeiro
-  const videoId = "dYwQzHRzB00"; // Vídeo de teste temporário
+  const videoId = "lF-AV9giMcw"; // Vídeo de teste temporário
   
   const handleVideoError = () => {
     setVideoError(true);

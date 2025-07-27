@@ -4,7 +4,8 @@ function VideoSection2() {
   const [videoError, setVideoError] = useState(false);
   
   // ID do YouTube Short
-  const videoId = "zMDBd-7jbGg";
+  // const videoId = "zMDBd-7jbGg";
+  const videoId = "dYwQzHRzB00";
   
   const handleVideoError = () => {
     setVideoError(true);
