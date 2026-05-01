@@ -33,10 +33,10 @@ function SummaryFAQ() {
             <div className="p-5 border-t border-[#333] bg-[#1c1c1c]">
               <p className="text-gray-300 leading-relaxed">
                 Sim! O método <span className="font-bold text-[#f8c304]">Coluna Viva</span> é um tratamento comprovado e já
-                ajudou milhares de pessoas a se livrarem das dores nas costas. Com
-                ele, você terá acesso a técnicas e exercícios que vão fortalecer,
-                alongar e estabilizar sua coluna, proporcionando alívio imediato e
-                duradouro.
+              ajudou milhares de pessoas a se livrarem das dores nas costas. Com
+              ele, você terá acesso a técnicas e exercícios que vão fortalecer,
+              alongar e estabilizar sua coluna, proporcionando alívio imediato e
+              duradouro.
               </p>
             </div>
           )}
@@ -55,9 +55,9 @@ function SummaryFAQ() {
           {isOpen2 && (
             <div className="p-5 border-t border-[#333] bg-[#1c1c1c]">
               <p className="text-gray-300 leading-relaxed">
-                Você receberá o acesso imediato ao método por e-mail, assim que a
-                compra for aprovada. Tudo será enviado para seu endereço de
-                e-mail, e você poderá acessar o método a qualquer hora e em
+              Você receberá o acesso imediato ao método por e-mail, assim que a
+              compra for aprovada. Tudo será enviado para seu endereço de
+              e-mail, e você poderá acessar o método a qualquer hora e em
                 qualquer lugar através de nossa plataforma exclusiva, disponível tanto no 
                 computador quanto no celular.
               </p>
@@ -93,7 +93,7 @@ function SummaryFAQ() {
         <p className="text-white font-semibold">
           Sua compra é <span className="text-[#f8c304] font-bold">100% segura e garantida</span>. Caso o método não funcione para
           você, basta solicitar o reembolso em até <span className="text-[#f8c304] font-bold">7 dias</span>.
-        </p>
+      </p>
       </div>
     </div>
   );

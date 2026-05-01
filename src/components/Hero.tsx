@@ -28,7 +28,7 @@ function Hero() {
             <span className="text-white text-opacity-90">
               Descubra o Método <span className="font-bold text-[#f8c304]">100% Natural</span> com Exercícios Passo a Passo (Com Vídeos Explicativos) para Acabar com Dores Lombares, Hérnia de Disco e Tensão Muscular
             </span>
-          </h2>
+      </h2>
           
           {/* Badges de credibilidade */}
           <div className="flex flex-wrap justify-center gap-4 mt-6">
@@ -222,7 +222,7 @@ function Hero() {
             <a href="https://pay.kiwify.com.br/UQ3SQz3" className="block w-full">
               <button className="w-full py-5 px-8 bg-gradient-to-r from-[#f8c304] to-[#ffd700] hover:from-[#ffd700] hover:to-[#f8c304] text-black text-xl md:text-2xl font-bold rounded-lg shadow-lg transform hover:scale-105 hover:scale-95 transition-all duration-1000 uppercase tracking-wider animate-pulse">
                 Quero acabar com minhas dores agora!
-              </button>
+      </button>
             </a>
             
             {/* Selos de garantia/segurança */}

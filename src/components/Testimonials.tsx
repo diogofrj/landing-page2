@@ -60,105 +60,116 @@ function Testimonials() {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-16 bg-black">
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold mb-2 text-[#f8c304]">
-          Depoimentos de quem já experimentou
-        </h2>
-        <div className="w-24 h-1 bg-[#f8c304] mx-auto mb-4"></div>
-        <p className="text-white max-w-2xl mx-auto">
-          Veja o que nossos clientes estão dizendo sobre o Método Coluna Viva e os resultados obtidos
-        </p>
-      </div>
+    <div className="w-full bg-black py-16 px-4 text-white">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold mb-4">
+            <span className="text-[#f8c304]">Depoimentos</span> de quem já experimentou
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#f8c304] to-[#ffd700] mx-auto mb-6"></div>
+          <p className="text-white/90 max-w-2xl mx-auto text-lg">
+            Veja o que nossos clientes estão dizendo sobre o Método Coluna Viva e os resultados obtidos
+          </p>
+        </div>
 
-      {/* Swiper Container */}
-      <div className="container">
-        <h3 className="title text-[#f8c304] text-xl mb-4">Depoimentos de nossos clientes</h3>
-        
-        {/* Embla Carousel */}
-        <div className="relative">
-          {/* Botões de navegação */}
-          <button 
-            onClick={scrollPrev}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-black/70 hover:bg-[#f8c304] text-white hover:text-black rounded-full p-2 focus:outline-none"
-            aria-label="Anterior"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
-          </button>
+        {/* Swiper Container */}
+        <div className="container bg-gradient-to-b from-[#0c1a2a] to-[#103259] p-6 rounded-lg border border-[#f8c304]/20 shadow-xl">
+          <h3 className="text-[#f8c304] text-xl mb-6 font-semibold">Histórias reais de transformação</h3>
           
-          <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex">
-              {realTestimonials.map((item) => (
-                <div 
-                  key={item.id}
-                  className="flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.333%] lg:flex-[0_0_25%] px-2"
-                >
-                  <div className="slide-item bg-[#111] rounded-lg overflow-hidden border border-[#f8c304]/20 h-auto">
-                    <div 
-                      className="cursor-pointer relative overflow-hidden"
-                      onClick={() => openTestimonial(item)}
-                    >
-                      <img 
-                        src={item.imagePath} 
-                        alt={`Depoimento de ${item.name}`}
-                        className="w-full hover:scale-105 transition-transform duration-300"
-                      />
-                      <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors duration-300"></div>
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
-                        </svg>
+          {/* Embla Carousel */}
+          <div className="relative">
+            {/* Botões de navegação */}
+            <button 
+              onClick={scrollPrev}
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-black/70 hover:bg-[#f8c304] text-white hover:text-black rounded-full p-2 focus:outline-none"
+              aria-label="Anterior"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            
+            <div className="overflow-hidden" ref={emblaRef}>
+              <div className="flex">
+                {realTestimonials.map((item) => (
+                  <div 
+                    key={item.id}
+                    className="flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33.333%] lg:flex-[0_0_25%] px-2"
+                  >
+                    <div className="slide-item bg-black/50 rounded-lg overflow-hidden border border-[#f8c304]/30 h-auto shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                      <div 
+                        className="cursor-pointer relative overflow-hidden"
+                        onClick={() => openTestimonial(item)}
+                      >
+                        <img 
+                          src={item.imagePath} 
+                          alt={`Depoimento de ${item.name}`}
+                          className="w-full hover:scale-105 transition-transform duration-300"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent hover:opacity-75 transition-opacity duration-300"></div>
+                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#f8c304]/80 text-black p-2 rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"></path>
+                          </svg>
+                        </div>
                       </div>
-                    </div>
-                    <div className="p-3">
-                      <h4 className="text-[#f8c304] font-medium">{item.name}</h4>
-                      <div className="flex gap-1 mt-1">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                          <span key={star} className="text-[#f8c304] text-sm">★</span>
-                        ))}
+                      <div className="p-4">
+                        <h4 className="text-[#f8c304] font-medium text-lg">{item.name}</h4>
+                        <div className="flex gap-1 mt-1">
+                          {[1, 2, 3, 4, 5].map((star) => (
+                            <span key={star} className="text-[#f8c304] text-sm">★</span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-          
-          <button 
-            onClick={scrollNext}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-black/70 hover:bg-[#f8c304] text-white hover:text-black rounded-full p-2 focus:outline-none"
-            aria-label="Próximo"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M9 18l6-6-6-6" />
-            </svg>
-          </button>
+            
+            <button 
+              onClick={scrollNext}
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-black/70 hover:bg-[#f8c304] text-white hover:text-black rounded-full p-2 focus:outline-none"
+              aria-label="Próximo"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
 
-          {/* Paginação */}
-          <div className="flex justify-center mt-4">
-            <div className="flex gap-2">
-              {Array.from({ length: Math.ceil(realTestimonials.length / 4) }).map((_, index) => (
-                <button
-                  key={index}
-                  className="w-3 h-3 rounded-full bg-[#f8c304]/30 hover:bg-[#f8c304]"
-                  onClick={() => emblaApi?.scrollTo(index * 4)}
-                  aria-label={`Ir para slide ${index + 1}`}
-                />
-              ))}
+            {/* Paginação */}
+            <div className="flex justify-center mt-6">
+              <div className="flex gap-2">
+                {Array.from({ length: Math.ceil(realTestimonials.length / 4) }).map((_, index) => (
+                  <button
+                    key={index}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${index === 0 ? 'bg-[#f8c304]' : 'bg-[#f8c304]/30 hover:bg-[#f8c304]/70'}`}
+                    onClick={() => emblaApi?.scrollTo(index * 4)}
+                    aria-label={`Ir para slide ${index + 1}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
+        </div>
+        
+        <div className="mt-10 text-center">
+          <a
+            href="https://pay.kiwify.com.br/UQ3SQz3"
+            className="bg-[#f8c304] text-black font-bold py-4 px-8 rounded-full text-xl inline-block transition-all hover:bg-yellow-400 hover:scale-105 transform duration-300 mt-4"
+          >
+            QUERO OS MESMOS RESULTADOS
+          </a>
         </div>
       </div>
 
       {/* Modal para exibir a imagem ampliada */}
       {selectedTestimonial && (
-        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4 overflow-auto">
-          <div className="relative max-w-4xl w-full">
+        <div className="fixed inset-0 bg-black/95 flex items-center justify-center z-50 p-4 overflow-auto">
+          <div className="relative max-w-4xl w-full bg-[#0c1a2a]/90 p-4 rounded-lg border border-[#f8c304]/30">
             <button 
               onClick={closeTestimonial}
-              className="absolute right-4 top-4 z-10 text-white hover:text-[#f8c304] bg-black/50 rounded-full p-2 sticky"
+              className="absolute right-4 top-4 z-10 text-white hover:text-[#f8c304] bg-black/70 rounded-full p-2 transition-colors duration-300"
               aria-label="Fechar"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -170,8 +181,12 @@ function Testimonials() {
               <img 
                 src={selectedTestimonial.imagePath} 
                 alt={`Depoimento de ${selectedTestimonial.name}`}
-                className="w-full"
+                className="w-full rounded shadow-lg"
               />
+              <div className="mt-4 text-center">
+                <h3 className="text-[#f8c304] text-xl font-semibold">{selectedTestimonial.name}</h3>
+                <p className="text-white/80 mt-1">Cliente satisfeito do Método Coluna Viva</p>
+              </div>
             </div>
           </div>
         </div>

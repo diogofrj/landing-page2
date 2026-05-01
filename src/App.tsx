@@ -20,27 +20,27 @@ function App() {
 
       {/* Method Explanation */}
       <section id="method" className="w-full px-4">
-        <MethodExplanation />
+          <MethodExplanation />
       </section>
 
       {/* Benefits Section */}
       <section id="benefits" className="w-full py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <Benefits />
+        <Benefits />
         </div>
       </section>
 
       {/* Testimonials */}
       <section id="testimonials" className="w-full py-16 px-4 bg-gradient-to-br from-[#f5f7fa] to-[#e0f2fe]">
         <div className="max-w-5xl mx-auto">
-          <Testimonials />
+        <Testimonials />
         </div>
       </section>
 
       {/* Bonuses */}
       <section id="bonuses" className="w-full py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <Bonuses />
+        <Bonuses />
         </div>
       </section>
 
@@ -57,7 +57,7 @@ function App() {
       {/* FAQ Section */}
       <section id="faq" className="w-full py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <SummaryFAQ />
+        <SummaryFAQ />
         </div>
       </section>
 
